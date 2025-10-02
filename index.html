@@ -1,32 +1,53 @@
 <!DOCTYPE HTML>
-<html lang = "en">
+<html lang="en">
 <head>
    <meta charset="UTF-8">
-   <tittle>"ANNIV CARD</tittle>
+   <title>ANNIV CARD</title>
    <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-  <div class="card"></div>
-    <h1>"Happy Anniversary LOMLꨄ︎</h1>
-    <h2>"September 5th</h2>
+  <div class="card">
+    <h1>Happy anniversary to the person who makes every day better. Cheers to another year with you.ꨄ︎</h1>
+    <h2>The 5th of September</h2>
 
-    <img src ="gambarkuw.jpeg"alt='gambarkuw' width="400">
+    <img src="gambarkuw.jpeg" alt="gambarkuw" width="400">
+
     <p class="message">
-      Today we celebrate the special day that brought us together.  
-      Thank you for all the love, laughter, and memories.  
-      Here's to many more years together! 🥂
+      Thank you for another year of love, laughter, and support.
+      Being with you is the easiest and most natural thing. Happy anniversary₊˚⊹ ᰔ
     </p>
 
-    <h3>Our special moment:D</h3>
+    <h3>Our special moment :D</h3>
     <ul>
         <li>First Date 🍕</li>
-        <li>First Hug</li>
         <li>Unforgettable Laughter 😍</li>
     </ul>
 
+    <!-- Tombol -->
+    <button class="btn" onclick="showMessage()">💌 Click Me</button>
+    <button class="btn" onclick="nextSlide()">➡️ Next Surprise</button>
 
+    <!-- Pesan tersembunyi pertama -->
+    <div id="secret" class="hidden-message">
+      I love you more than words can say ❤️
+    </div>
+
+    <!-- Kejutan kedua -->
+    <div id="surprise" class="hidden-message">
+      <img src="love.jpg" alt="Love" width="300">
+      <img src="love2.jpg" alt="Love2" width="300">
+      <p>You are my forever and always ❤️</p>
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("secret").style.display = "block";
+    }
+
+    function nextSlide() {
+      document.getElementById("surprise").style.display = "block";
+    }
+  </script>
 </body>
-
-
 </html>
