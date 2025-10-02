@@ -23,8 +23,7 @@ h2 {
   color: #666;
 }
 
-.anniv-img {
-  width: 300px;
+img {
   border-radius: 10px;
   margin: 20px 0;
 }
@@ -45,4 +44,35 @@ ul li {
   padding: 10px;
   border-radius: 8px;
   color: #660033;
+}
+
+/* Tombol */
+.btn {
+  background: #e60073;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff3385;
+}
+
+/* Pesan tersembunyi */
+.hidden-message {
+  display: none;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #e60073;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
